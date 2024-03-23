@@ -5,8 +5,6 @@ function Onboarding() {
   const { user, ready, login } = usePrivy();
   const { requestFarcasterSigner } = useExperimentalFarcasterSigner();
 
-  console.log('user', user);
-
   const farcasterAccount = user?.linkedAccounts.find(
     (account) => account.type === 'farcaster'
   );
