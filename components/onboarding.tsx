@@ -1,5 +1,6 @@
 'use client';
 import { usePrivy, useExperimentalFarcasterSigner } from '@privy-io/react-auth';
+import CreateFrame from './create';
 
 function Onboarding() {
   const { user, ready, login } = usePrivy();
@@ -31,7 +32,7 @@ function Onboarding() {
     );
   }
 
-  return <div>onboarding</div>;
+  return <CreateFrame />;
 }
 
 export default Onboarding;
